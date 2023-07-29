@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+</head>
+<body>
+    
+<main>
+    <h1>Tabelas no HTML</h1>
+
+    <section id="students">
+        <h2>Tabela de Alunos</h2>
+            
+        <table border="2">     <!-- Cabeçalho(thead) e corpo da tabela(tbody) -->
+            <thead>    
+                <tr>        <!-- Linhas(tr) e colunas(td) ou (th) no  -->
+                    <th>Nome</th>
+                    <th>E-mail</th>
+                    <th>Matricula</th>
+                </tr>
+            </thead>
+
+                <!-- Dentro do Tbody sempre utilizamos td -->
+            <tbody>              
+                <tr>
+                    <td>Carol Danvers</td>
+                    <td>carol.danvers@gmail.com</td>
+                    <td>1</td>
+                </tr>
+
+                <tr>
+                    <td>Peter Parker</td>
+                    <td>Peter.parker@gmail.com</td>
+                    <td>2</td>
+                </tr>
+
+                <tr>
+                    <td>Tonny Stark</td>
+                    <td>tonnystark@gmail.com</td>
+                    <td>3</td>
+                </tr>
+            </tbody>
+        </table>
+
+    </section>
+
+    <!-- Agora vamos criar outra tabela -->
+
+    <section id="finance">
+        <h2>Tabela de controle financeiro</h2>
+
+        <table border="3">
+            <thead>
+                <tr>
+                    <th>Data</th>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Valor</th>
+                </tr>
+            </thead>
+                
+            <tbody>
+                <tr>
+                    <td rowspan="2">15/06/2022</td>  <!-- Para mesclar celulas faremos uso do rowspan -->
+                    <td>Despesa</td>
+                    <td>Almoço</td>
+                    <td>R$ 35,00</td>
+                </tr>
+
+                <tr>
+                    <!-- <td>15/06/2022</td> como eu fiz um rowspan lá encima essa linha eu tenho que apagar -->
+                    <td>Receita</td>
+                    <td>Salário</td>
+                    <td>R$ 3.768,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</main>
+
+    <!-- Mesclar colunas (colspan) -->
+</body>
+</html>
